@@ -1,0 +1,20 @@
+<hr>
+<div  *ngFor=" let personaje of personajes">
+<div class="card-columns container per">
+  <div>
+    <img class="card-img-top" [src]="personaje.imagen" [alt]="personaje.name">
+    <div class="card-body">
+      <h5 class="card-title">{{personaje.alias}}</h5>
+      <p class="card-text">{{personaje.name}}</p>
+      <p class="card-text">
+        <small class="text-muted">{{personaje.saga}}</small>
+      </p>
+      <button (click)="verPersonaje(personaje._id)" type="button" class="btn btn-outline-primary btn-block">
+        Ver más...
+      </button>
+    </div>
+
+  </div><br><br>
+  </div>
+  </div>
+

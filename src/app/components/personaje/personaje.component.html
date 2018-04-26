@@ -1,0 +1,15 @@
+<hr>
+<div class="card ">
+  <div class="card-header">
+    <button (click)="regresar()" type="button" class="btn btn-outline-primary" name="button">Regresar</button>
+  </div>
+  <div class="card-body">
+
+    <img [src]="personaje.imagen" class="rounded float-left imr" [alt]="personaje.name">
+    <h2 class="card-title">{{personaje.nombre | uppercase}}</h2>
+    <h6 class="card-subtitle mb-2 text-muted">{{personaje.alias}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{personaje.saga}}</h6>
+    <p class="card-text tex-class">{{personaje.informacion}}</p>
+
+  </div>
+</div>
